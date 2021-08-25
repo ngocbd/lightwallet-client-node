@@ -1,0 +1,35 @@
+{
+  "name": "lightwallet",
+  "version": "1.0.0",
+  "description": "Lightwallet client for nodejs. A multi chain wallet by lightwallet.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngocbd/lightwallet-client-node.git"
+  },
+  "keywords": [
+    "lightwallet",
+    "multi",
+    "chain",
+    "wallet",
+    "eth",
+    "btc",
+    "bsc",
+    "xrp",
+    "xlm",
+    "trx",
+    "erc20",
+    "trc10",
+    "trc20",
+    "bep20."
+  ],
+  "author": "ngocbd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ngocbd/lightwallet-client-node/issues"
+  },
+  "homepage": "https://github.com/ngocbd/lightwallet-client-node#readme"
+}
