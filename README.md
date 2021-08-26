@@ -11,13 +11,7 @@ LightWallet is an e-wallet service, allowing users to perform the functions of c
 
 #### Register user
 ```js
-try {
-			let user = await lightwallet.register("admin.someproject@gmail.com","passwordonlyfortest","https://somewhere.com/");
-			
-		} catch (error) {
-			
-			expect(error.response.status).equals(409);
-		}
+let user = await lightwallet.register("admin.someproject@gmail.com","passwordonlyfortest","https://somewhere.com/");
 ```
 
 #### Update user
@@ -36,10 +30,8 @@ expect(result.data).have.property("token")
 one account mean subaccount of current user it have new address
 
 ```js
-		let result = await lightwallet.createAccount("user"+new Date().getTime(),"TRX");
-		
-		expect(result.data).have.property("id")
-		
+let result = await lightwallet.createAccount("user"+new Date().getTime(),"TRX");
+expect(result.data).have.property("id")		
 ```
 
 #### List AllAccount
@@ -47,8 +39,7 @@ one account mean subaccount of current user it have new address
 
 ```js
 let result = await lightwallet.accounts();
-expect(result.data).to.be.an('array');
-		
+expect(result.data).to.be.an('array');		
 ```
 
 
@@ -56,8 +47,8 @@ expect(result.data).to.be.an('array');
 
 
 ```js
-		let result = await lightwallet.getAddress();
-		expect(result.data).to.be.an('array');
+let result = await lightwallet.getAddress();
+expect(result.data).to.be.an('array');
 		
 ```
 #### Get Account detail
@@ -74,15 +65,7 @@ expect(result.data).have.property("email")
 
 
 ```js
-let result = await lightwallet.send("admin.someproject@gmail.com","user.someproject@gmail.com","TWCAqe8QtcmaRLvBSfF3YQSFCmq5wusNYU",1,"TRX","{gasValue:3}","0.00063","no description");
-		
-		expect(result.data).have.property("email")	
-		} catch (error) {
-			
-			expect(error.response.data.message).equal("Your balance is not enough to send.");
-			
-		}
-		
+let result = await lightwallet.send("admin.someproject@gmail.com","user.someproject@gmail.com","TWCAqe8QtcmaRLvBSfF3YQSFCmq5wusNYU",1,"TRX","{gasValue:3}","0.00063","no description");		
 ```
 
 
