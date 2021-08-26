@@ -1,5 +1,5 @@
-# lightwallet-client-node
-Lightwallet client for nodejs. A multi chain wallet by lightwallet.
+# Lightwallet client for node js
+A multi chains wallet by lightwallet.
 
 LightWallet is an e-wallet service, allowing users to perform the functions of creating accounts, creating e-wallets, managing wallets, as well as performing the functions of transferring and receiving cryptocurrencies. Currently, LightWallet is supporting many of the most popular coins such as Bitcoin (BTC), Ethereum (ETH), LiteCoin (LTC), Stellar (XLM), Ripple (XRP), Tron (TRX), ... and the above tokens. respective coins. It can be simply understood as “Coinbase.com clone” but supports more chains and works at the API level, specialized for programmers who are not specialized in Blockchain, saving the cost of deploying products on blockchain.
 
