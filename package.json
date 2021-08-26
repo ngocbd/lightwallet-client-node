@@ -1,6 +1,6 @@
 {
   "name": "lightwallet",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Lightwallet client for nodejs. A multi chain wallet by lightwallet.",
   "main": "index.js",
   "scripts": {
