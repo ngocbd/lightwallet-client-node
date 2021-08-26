@@ -72,6 +72,12 @@ describe("Lightwallet", () => {
 			
 		}
 	})
+
+
+	it("should return check hash result 200", async ()=> {
+		let result = await lightwallet.checkHash("0xf7c3d342381cad5286659752e63673fbab104634f620a2aa37bae189074ebd78","ETH");
+		expect(result.data.status).equal(200);
+	})
 	
 
 
