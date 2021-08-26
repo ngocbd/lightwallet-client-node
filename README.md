@@ -68,10 +68,48 @@ expect(result.data).have.property("email")
 let result = await lightwallet.send("admin.someproject@gmail.com","user.someproject@gmail.com","TWCAqe8QtcmaRLvBSfF3YQSFCmq5wusNYU",1,"TRX","{gasValue:3}","0.00063","no description");		
 ```
 
+#### Send coin/token
 
 
+```js
+let result = await lightwallet.send("admin.someproject@gmail.com","user.someproject@gmail.com","TWCAqe8QtcmaRLvBSfF3YQSFCmq5wusNYU",1,"TRX","{gasValue:3}","0.00063","no description");		
+```
 
 
+#### Check Hash
+
+
+```js
+let result = await lightwallet.checkHash("0xf7c3d342381cad5286659752e63673fbab104634f620a2aa37bae189074ebd78","ETH");
+expect(result.data.status).equal(200);	
+```
+
+
+### Build and Test from source code
+
+##### Clone this repository 
+
+```
+git clone git@github.com:ngocbd/lightwallet-client-node.git
+```
+
+```
+yarn
+```
+or
+```
+npm install
+```
+
+```
+npm test
+```
+or 
+```
+yarn test
+```
+
+![image](https://user-images.githubusercontent.com/439333/130896139-95a37a27-7d1b-4d31-846f-fc27511c3bf3.png)
 
 
 
