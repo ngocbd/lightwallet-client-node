@@ -8,7 +8,10 @@ LightWallet is an e-wallet service, allowing users to perform the functions of c
 
 
 ### Getting started
-
+If you logged in pass token in constructor
+```js
+const lightwallet = require('../')("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsaWdodHdhbGxldCIsImp0aSI6ImFkbWluLnNvbWVwcm9qZWN0QGdtYWlsLmNvbSJ9.kGVJqoUQzXJSm2FypkSr6on8547bQ68I-Lu4N16ZlKk");
+```
 #### Register user
 ```js
 let user = await lightwallet.register("admin.someproject@gmail.com","passwordonlyfortest","https://somewhere.com/");
