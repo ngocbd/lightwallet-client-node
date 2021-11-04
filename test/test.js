@@ -6,7 +6,7 @@ describe("Lightwallet", () => {
 
 	//test a function for a specific case
 	it("should return client version", ()=> {
-		expect(lightwallet.version()).equals("1.0.0");
+		expect(lightwallet.version()).equals("1.0.3");
 	})
 
 

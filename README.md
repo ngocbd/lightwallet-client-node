@@ -8,13 +8,25 @@ LightWallet is an e-wallet service, allowing users to perform the functions of c
 
 
 ### Getting started
-If you logged in pass token in constructor
+If you logged in pass token in constructor (pass null if first time register or login)
+
 ```js
-const lightwallet = require('../')("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsaWdodHdhbGxldCIsImp0aSI6ImFkbWluLnNvbWVwcm9qZWN0QGdtYWlsLmNvbSJ9.kGVJqoUQzXJSm2FypkSr6on8547bQ68I-Lu4N16ZlKk");
+const lightwallet = require('lightwallet')("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsaWdodHdhbGxldCIsImp0aSI6ImFkbWluLnNvbWVwcm9qZWN0QGdtYWlsLmNvbSJ9.kGVJqoUQzXJSm2FypkSr6on8547bQ68I-Lu4N16ZlKk");
 ```
+Or you can regisger and login first
+
 #### Register user
 ```js
+const lightwallet = require('lightwallet')(null);
 let user = await lightwallet.register("admin.someproject@gmail.com","passwordonlyfortest","https://somewhere.com/");
+```
+
+
+#### Login
+```js
+const lightwallet = require('lightwallet')(null);
+let result = await lightwallet.login("admin.someproject@gmail.com","passwordonlyfortest");
+expect(result.data).have.property("token")
 ```
 
 #### Update user
@@ -23,11 +35,6 @@ let result = await lightwallet.update("admin.someproject@gmail.com","passwordonl
 expect(result.data).equal("change notification url success!")
 ```
 
-#### Login
-```js
-let result = await lightwallet.login("admin.someproject@gmail.com","passwordonlyfortest");
-expect(result.data).have.property("token")
-```
 
 #### createAccount
 one account mean subaccount of current user it have new address

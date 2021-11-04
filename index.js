@@ -12,7 +12,7 @@ class Lightwallet{
   }
   
   version() {
-    return "1.0.0";
+    return "1.0.3";
   }
 
   accounts()
@@ -90,4 +90,5 @@ class Lightwallet{
 }
 
 exports = module.exports = (key) =>{ return new Lightwallet(key)};
+exports.version = () =>{ return "1.0.3"};
   
