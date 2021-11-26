@@ -13,7 +13,7 @@ If you logged in pass token in constructor (pass null if first time register or 
 ```js
 const lightwallet = require('lightwallet')("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsaWdodHdhbGxldCIsImp0aSI6ImFkbWluLnNvbWVwcm9qZWN0QGdtYWlsLmNvbSJ9.kGVJqoUQzXJSm2FypkSr6on8547bQ68I-Lu4N16ZlKk");
 ```
-Or you can regisger and login first
+Or you can register and login first
 
 #### Register user
 ```js

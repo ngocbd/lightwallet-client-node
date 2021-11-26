@@ -12,7 +12,7 @@ class Lightwallet{
   }
   
   version() {
-    return "1.0.3";
+    return "1.0.4";
   }
 
   accounts()
@@ -25,7 +25,7 @@ class Lightwallet{
       "email": email,
       "password": password,
       "urlWebhook": urlWebhook,
-      "showPrivateKey": true
+      "showPrivateKey": false
     });
     return this.request.post("user/register",data);
   }
@@ -90,5 +90,5 @@ class Lightwallet{
 }
 
 exports = module.exports = (key) =>{ return new Lightwallet(key)};
-exports.version = () =>{ return "1.0.3"};
+exports.version = () =>{ return "1.0.4"};
   
